@@ -1,0 +1,6 @@
+{
+  "name": "Kas Basket SACIL",
+  "description": "Aplikasi mobile-first on-premise/hybrid pengelolaan keuangan & kas ekskul basket SMA Negeri 1 Cileunyi.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

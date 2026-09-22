@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Font size accessibility transitions */
+html {
+  transition: font-size 0.15s ease-in-out;
+}
+
+/* Print styling support */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  /* Hide navigation, headers, controls and non-printable elements */
+  .print\:hidden,
+  button,
+  nav,
+  header,
+  footer,
+  #mobile-bottom-navbar,
+  #btn-mobile-fab-trx {
+    display: none !important;
+  }
+
+  /* When printing a specific document target */
+  .printable-document-active {
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

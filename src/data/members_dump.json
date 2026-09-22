@@ -1,0 +1,7148 @@
+{
+  "weeks": [
+    {
+      "id": "juli_1",
+      "col": 6,
+      "month": "Juli",
+      "week": "M1",
+      "label": "Juli M1"
+    },
+    {
+      "id": "juli_2",
+      "col": 7,
+      "month": "Juli",
+      "week": "M2",
+      "label": "Juli M2"
+    },
+    {
+      "id": "juli_3",
+      "col": 8,
+      "month": "Juli",
+      "week": "M3",
+      "label": "Juli M3"
+    },
+    {
+      "id": "juli_4",
+      "col": 9,
+      "month": "Juli",
+      "week": "M4",
+      "label": "Juli M4"
+    },
+    {
+      "id": "agustus_1",
+      "col": 10,
+      "month": "Agustus",
+      "week": "M1",
+      "label": "Agustus M1"
+    },
+    {
+      "id": "agustus_2",
+      "col": 11,
+      "month": "Agustus",
+      "week": "M2",
+      "label": "Agustus M2"
+    },
+    {
+      "id": "agustus_3",
+      "col": 12,
+      "month": "Agustus",
+      "week": "M3",
+      "label": "Agustus M3"
+    },
+    {
+      "id": "agustus_4",
+      "col": 13,
+      "month": "Agustus",
+      "week": "M4",
+      "label": "Agustus M4"
+    },
+    {
+      "id": "agustus_5",
+      "col": 14,
+      "month": "Agustus",
+      "week": "M5",
+      "label": "Agustus M5"
+    },
+    {
+      "id": "september_1",
+      "col": 15,
+      "month": "September",
+      "week": "M1",
+      "label": "September M1"
+    },
+    {
+      "id": "september_2",
+      "col": 16,
+      "month": "September",
+      "week": "M2",
+      "label": "September M2"
+    },
+    {
+      "id": "september_3",
+      "col": 17,
+      "month": "September",
+      "week": "M3",
+      "label": "September M3"
+    },
+    {
+      "id": "september_4",
+      "col": 18,
+      "month": "September",
+      "week": "M4",
+      "label": "September M4"
+    },
+    {
+      "id": "oktober_1",
+      "col": 19,
+      "month": "Oktober",
+      "week": "M1",
+      "label": "Oktober M1"
+    },
+    {
+      "id": "oktober_2",
+      "col": 20,
+      "month": "Oktober",
+      "week": "M2",
+      "label": "Oktober M2"
+    },
+    {
+      "id": "oktober_3",
+      "col": 21,
+      "month": "Oktober",
+      "week": "M3",
+      "label": "Oktober M3"
+    },
+    {
+      "id": "oktober_4",
+      "col": 22,
+      "month": "Oktober",
+      "week": "M4",
+      "label": "Oktober M4"
+    },
+    {
+      "id": "november_1",
+      "col": 32,
+      "month": "November",
+      "week": "M1",
+      "label": "November M1"
+    },
+    {
+      "id": "november_2",
+      "col": 33,
+      "month": "November",
+      "week": "M2",
+      "label": "November M2"
+    },
+    {
+      "id": "november_3",
+      "col": 34,
+      "month": "November",
+      "week": "M3",
+      "label": "November M3"
+    },
+    {
+      "id": "november_4",
+      "col": 35,
+      "month": "November",
+      "week": "M4",
+      "label": "November M4"
+    },
+    {
+      "id": "desember_1",
+      "col": 36,
+      "month": "Desember",
+      "week": "M1",
+      "label": "Desember M1"
+    },
+    {
+      "id": "desember_2",
+      "col": 37,
+      "month": "Desember",
+      "week": "M2",
+      "label": "Desember M2"
+    },
+    {
+      "id": "desember_3",
+      "col": 38,
+      "month": "Desember",
+      "week": "M3",
+      "label": "Desember M3"
+    },
+    {
+      "id": "desember_4",
+      "col": 39,
+      "month": "Desember",
+      "week": "M4",
+      "label": "Desember M4"
+    },
+    {
+      "id": "desember_5",
+      "col": 40,
+      "month": "Desember",
+      "week": "M5",
+      "label": "Desember M5"
+    }
+  ],
+  "members": [
+    {
+      "id": "mbr-10-1",
+      "no": 1,
+      "name": "Alfian Maulana",
+      "grade": "Kelas 10",
+      "subClass": "A",
+      "jerseyNumber": 14,
+      "position": "Shooting Guard",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120178910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-2",
+      "no": 2,
+      "name": "Aluna Sagita",
+      "grade": "Kelas 10",
+      "subClass": "A",
+      "jerseyNumber": 17,
+      "position": "Small Forward",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120278910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "6/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-3",
+      "no": 3,
+      "name": "Muhammad Khadafi",
+      "grade": "Kelas 10",
+      "subClass": "A",
+      "jerseyNumber": 20,
+      "position": "Power Forward",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120378910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "6/9",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "6/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "22/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-4",
+      "no": 4,
+      "name": "Ghaisan Jaris",
+      "grade": "Kelas 10",
+      "subClass": "B",
+      "jerseyNumber": 23,
+      "position": "Center",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120478910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "20/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-5",
+      "no": 5,
+      "name": "Yuane Silvia",
+      "grade": "Kelas 10",
+      "subClass": "B",
+      "jerseyNumber": 26,
+      "position": "Point Guard",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120578910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "16/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-6",
+      "no": 6,
+      "name": "Dema Kinan",
+      "grade": "Kelas 10",
+      "subClass": "D",
+      "jerseyNumber": 29,
+      "position": "Shooting Guard",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 2,
+      "phone": "08120678910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-7",
+      "no": 7,
+      "name": "Dendi Wijaya",
+      "grade": "Kelas 10",
+      "subClass": "E",
+      "jerseyNumber": 32,
+      "position": "Small Forward",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120778910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "6/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "3/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-8",
+      "no": 8,
+      "name": "Nazriel Dwi",
+      "grade": "Kelas 10",
+      "subClass": "E",
+      "jerseyNumber": 35,
+      "position": "Power Forward",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120878910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "20/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "17/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-9",
+      "no": 9,
+      "name": "Aisyah Azkiya",
+      "grade": "Kelas 10",
+      "subClass": "F",
+      "jerseyNumber": 38,
+      "position": "Center",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120978910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "4/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-10",
+      "no": 10,
+      "name": "Hafizh Rifqi",
+      "grade": "Kelas 10",
+      "subClass": "F",
+      "jerseyNumber": 41,
+      "position": "Point Guard",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08121078910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "21/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "21/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-11",
+      "no": 11,
+      "name": "Muhammad Syakir Arviansyah",
+      "grade": "Kelas 10",
+      "subClass": "F",
+      "jerseyNumber": 44,
+      "position": "Shooting Guard",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 1,
+      "phone": "08121178910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "4/9",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "7/9",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "7/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-12",
+      "no": 12,
+      "name": "Elis Styaloka",
+      "grade": "Kelas 10",
+      "subClass": "G",
+      "jerseyNumber": 47,
+      "position": "Small Forward",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08121278910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-13",
+      "no": 13,
+      "name": "Muhammad Raga Pratama",
+      "grade": "Kelas 10",
+      "subClass": "G",
+      "jerseyNumber": 50,
+      "position": "Power Forward",
+      "gender": "Putra",
+      "minWeeks": 2,
+      "plusWeeks": 0,
+      "phone": "08121378910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-14",
+      "no": 14,
+      "name": "Puan Sae",
+      "grade": "Kelas 10",
+      "subClass": "G",
+      "jerseyNumber": 53,
+      "position": "Center",
+      "gender": "Putri",
+      "minWeeks": 1,
+      "plusWeeks": 0,
+      "phone": "08121478910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "14/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "20/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "23/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-15",
+      "no": 15,
+      "name": "Yusuf Gibran",
+      "grade": "Kelas 10",
+      "subClass": "G",
+      "jerseyNumber": 56,
+      "position": "Point Guard",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08121578910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "22/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "29/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "31/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-16",
+      "no": 16,
+      "name": "Jihan Luthfi",
+      "grade": "Kelas 10",
+      "subClass": "H",
+      "jerseyNumber": 59,
+      "position": "Shooting Guard",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08121678910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "11/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "2/10",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "2/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-17",
+      "no": 17,
+      "name": "Rajata Wira",
+      "grade": "Kelas 10",
+      "subClass": "H",
+      "jerseyNumber": 62,
+      "position": "Small Forward",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08121778910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "2/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "9/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "23/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-18",
+      "no": 18,
+      "name": "Dias Ikhsanul",
+      "grade": "Kelas 10",
+      "subClass": "I",
+      "jerseyNumber": 65,
+      "position": "Power Forward",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08121878910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-19",
+      "no": 19,
+      "name": "Gantari Amyra",
+      "grade": "Kelas 10",
+      "subClass": "I",
+      "jerseyNumber": 68,
+      "position": "Center",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08121978910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "10/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-20",
+      "no": 20,
+      "name": "Nasywa Salsabilallah",
+      "grade": "Kelas 10",
+      "subClass": "J",
+      "jerseyNumber": 71,
+      "position": "Point Guard",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08122078910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "6/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-21",
+      "no": 21,
+      "name": "Rizam Achmad",
+      "grade": "Kelas 10",
+      "subClass": "K",
+      "jerseyNumber": 74,
+      "position": "Shooting Guard",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08122178910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "22/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "29/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "31/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-22",
+      "no": 22,
+      "name": "Vina Aulia",
+      "grade": "Kelas 10",
+      "subClass": "K",
+      "jerseyNumber": 77,
+      "position": "Small Forward",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08122278910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "11/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "2/10",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "2/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-23",
+      "no": 23,
+      "name": "Nazfa Yulia",
+      "grade": "Kelas 10",
+      "subClass": "L",
+      "jerseyNumber": 80,
+      "position": "Power Forward",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08122378910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "2/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "9/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "23/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-24",
+      "no": 24,
+      "name": "Niken Alexandra",
+      "grade": "Kelas 10",
+      "subClass": "L",
+      "jerseyNumber": 83,
+      "position": "Center",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08122478910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-10-25",
+      "no": 25,
+      "name": "Nizab Alfahri",
+      "grade": "Kelas 10",
+      "subClass": "L",
+      "jerseyNumber": 86,
+      "position": "Point Guard",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08122578910",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "16/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "10/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-1",
+      "no": 1,
+      "name": "Arjuna Anggara A.S",
+      "grade": "Kelas 11",
+      "subClass": "F1A",
+      "jerseyNumber": 15,
+      "position": "Shooting Guard",
+      "gender": "Putra",
+      "minWeeks": 2,
+      "plusWeeks": 0,
+      "phone": "08120178911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-2",
+      "no": 2,
+      "name": "Richardo Anugrah Bako",
+      "grade": "Kelas 11",
+      "subClass": "F2A",
+      "jerseyNumber": 18,
+      "position": "Small Forward",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120278911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "6/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-3",
+      "no": 3,
+      "name": "Meisya Anindya Nirbitha",
+      "grade": "Kelas 11",
+      "subClass": "F2C",
+      "jerseyNumber": 21,
+      "position": "Power Forward",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120378911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "6/9",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "6/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "22/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-4",
+      "no": 4,
+      "name": "Raihan Fauzan Hanief",
+      "grade": "Kelas 11",
+      "subClass": "F2C",
+      "jerseyNumber": 24,
+      "position": "Center",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120478911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "20/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-5",
+      "no": 5,
+      "name": "Dwinantara Arsya R.C",
+      "grade": "Kelas 11",
+      "subClass": "F2D",
+      "jerseyNumber": 27,
+      "position": "Point Guard",
+      "gender": "Putra",
+      "minWeeks": 1,
+      "plusWeeks": 0,
+      "phone": "08120578911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "september_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "oktober_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "oktober_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "oktober_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "oktober_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-6",
+      "no": 6,
+      "name": "Husni Ali Riyaddudin",
+      "grade": "Kelas 11",
+      "subClass": "F2D",
+      "jerseyNumber": 30,
+      "position": "Shooting Guard",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 1,
+      "phone": "08120678911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-7",
+      "no": 7,
+      "name": "Rajendra Fadhil Alvaro",
+      "grade": "Kelas 11",
+      "subClass": "F2D",
+      "jerseyNumber": 33,
+      "position": "Small Forward",
+      "gender": "Putra",
+      "minWeeks": 2,
+      "plusWeeks": 0,
+      "phone": "08120778911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "6/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "3/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-8",
+      "no": 8,
+      "name": "Rismawati Sutoyo",
+      "grade": "Kelas 11",
+      "subClass": "F3A",
+      "jerseyNumber": 36,
+      "position": "Power Forward",
+      "gender": "Putri",
+      "minWeeks": 2,
+      "plusWeeks": 0,
+      "phone": "08120878911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "20/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "17/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-9",
+      "no": 9,
+      "name": "Adelia Septiani",
+      "grade": "Kelas 11",
+      "subClass": "F3C",
+      "jerseyNumber": 39,
+      "position": "Center",
+      "gender": "Putri",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08120978911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "4/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-10",
+      "no": 10,
+      "name": "Muhammad Rizki Aurelio",
+      "grade": "Kelas 11",
+      "subClass": "F3C",
+      "jerseyNumber": 42,
+      "position": "Point Guard",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08121078911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "21/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "21/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-11",
+      "no": 11,
+      "name": "Syahla Athaya Nafisah Z",
+      "grade": "Kelas 11",
+      "subClass": "F3E",
+      "jerseyNumber": 45,
+      "position": "Shooting Guard",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08121178911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "4/9",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "7/9",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "7/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-12",
+      "no": 12,
+      "name": "Assyfa Sadina Elvariyani",
+      "grade": "Kelas 11",
+      "subClass": "F3F",
+      "jerseyNumber": 48,
+      "position": "Small Forward",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08121278911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-11-13",
+      "no": 13,
+      "name": "Guruh Dewantara",
+      "grade": "Kelas 11",
+      "subClass": "F3F",
+      "jerseyNumber": 51,
+      "position": "Power Forward",
+      "gender": "Putra",
+      "minWeeks": 3,
+      "plusWeeks": 0,
+      "phone": "08121378911",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "paid",
+          "date": "10",
+          "nominal": 2000
+        },
+        "desember_5": {
+          "status": "paid",
+          "date": "10",
+          "nominal": 2000
+        }
+      }
+    },
+    {
+      "id": "mbr-12-1",
+      "no": 1,
+      "name": "Abdul Wahid",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 16,
+      "position": "Shooting Guard",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120178912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-2",
+      "no": 2,
+      "name": "Adny Sandy Sairinissa",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 19,
+      "position": "Small Forward",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120278912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "6/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-3",
+      "no": 3,
+      "name": "Anton Junika",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 22,
+      "position": "Power Forward",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120378912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "4/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "6/9",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "6/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "22/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-4",
+      "no": 4,
+      "name": "Assyfa Izmi Nur Rahimah",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 25,
+      "position": "Center",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120478912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "20/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "27/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-5",
+      "no": 5,
+      "name": "Assyfa Sadina Elvariyani",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 28,
+      "position": "Point Guard",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120578912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "1/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "16/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "16/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-6",
+      "no": 6,
+      "name": "Boski Rafael Junifer Simbolon",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 31,
+      "position": "Shooting Guard",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120678912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "18/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "21/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "26/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "2/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-7",
+      "no": 7,
+      "name": "Celista Syahlaa Nursamsyi",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 34,
+      "position": "Small Forward",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120778912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "28/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "31/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "6/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "19/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "3/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-8",
+      "no": 8,
+      "name": "Denis Apriansyah",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 37,
+      "position": "Power Forward",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120878912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "27/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "9/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "12/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "20/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "17/11",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-9",
+      "no": 9,
+      "name": "Derren Ferdeva Al Azril",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 40,
+      "position": "Center",
+      "gender": "Putra",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08120978912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "3/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "10/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "17/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "4/9",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "5/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    },
+    {
+      "id": "mbr-12-10",
+      "no": 10,
+      "name": "Diana Putri",
+      "grade": "Kelas 12",
+      "subClass": "12",
+      "jerseyNumber": 43,
+      "position": "Point Guard",
+      "gender": "Putri",
+      "minWeeks": 0,
+      "plusWeeks": 0,
+      "phone": "08121078912",
+      "payments": {
+        "juli_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "juli_3": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "juli_4": {
+          "status": "paid",
+          "date": "26/7",
+          "nominal": 2000
+        },
+        "agustus_1": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_2": {
+          "status": "paid",
+          "date": "2/8",
+          "nominal": 2000
+        },
+        "agustus_3": {
+          "status": "paid",
+          "date": "21/8",
+          "nominal": 2000
+        },
+        "agustus_4": {
+          "status": "paid",
+          "date": "21/8",
+          "nominal": 2000
+        },
+        "agustus_5": {
+          "status": "paid",
+          "date": "30/8",
+          "nominal": 2000
+        },
+        "september_1": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_2": {
+          "status": "off",
+          "date": "",
+          "nominal": 0
+        },
+        "september_3": {
+          "status": "paid",
+          "date": "20/9",
+          "nominal": 2000
+        },
+        "september_4": {
+          "status": "paid",
+          "date": "27/9",
+          "nominal": 2000
+        },
+        "oktober_1": {
+          "status": "paid",
+          "date": "4/10",
+          "nominal": 2000
+        },
+        "oktober_2": {
+          "status": "paid",
+          "date": "11/10",
+          "nominal": 2000
+        },
+        "oktober_3": {
+          "status": "paid",
+          "date": "17/10",
+          "nominal": 2000
+        },
+        "oktober_4": {
+          "status": "paid",
+          "date": "25/10",
+          "nominal": 2000
+        },
+        "november_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "november_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_1": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_2": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_3": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_4": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        },
+        "desember_5": {
+          "status": "unpaid",
+          "date": "",
+          "nominal": 0
+        }
+      }
+    }
+  ]
+}

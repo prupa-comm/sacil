@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "Kas Basket SACIL - SMAN 1 Cileunyi",
+  "short_name": "Kas Basket",
+  "description": "Aplikasi pengelolaan keuangan & kas ekskul bola basket SMA Negeri 1 Cileunyi",
+  "theme_color": "#ea580c",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
