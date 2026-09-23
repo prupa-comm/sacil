@@ -17,11 +17,24 @@ const STORAGE_KEYS = {
 
 export const DEFAULT_TREASURER_PIN = '192837';
 
-export const loadTreasurerPin = (): string => {
+export const loadTreasurerPin = (settings?: ClubSettings): string => {
+  // 1. Check settings in memory
+  if (settings?.treasurerPin && settings.treasurerPin.trim().length >= 4) {
+    return settings.treasurerPin.trim();
+  }
+  // 2. Check standalone localStorage key
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.TREASURER_PIN);
     if (raw && raw.trim().length >= 4) {
       return raw.trim();
+    }
+    // 3. Check stored settings in localStorage
+    const rawSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
+    if (rawSettings) {
+      const parsedSettings = JSON.parse(rawSettings);
+      if (parsedSettings?.treasurerPin && parsedSettings.treasurerPin.trim().length >= 4) {
+        return parsedSettings.treasurerPin.trim();
+      }
     }
   } catch (e) {
     console.error('Failed to load treasurer PIN', e);
@@ -30,8 +43,15 @@ export const loadTreasurerPin = (): string => {
 };
 
 export const saveTreasurerPin = (pin: string): void => {
+  const cleanPin = pin.trim();
   try {
-    localStorage.setItem(STORAGE_KEYS.TREASURER_PIN, pin.trim());
+    localStorage.setItem(STORAGE_KEYS.TREASURER_PIN, cleanPin);
+    const rawSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
+    if (rawSettings) {
+      const parsed = JSON.parse(rawSettings);
+      parsed.treasurerPin = cleanPin;
+      localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(parsed));
+    }
   } catch (e) {
     console.error('Failed to save treasurer PIN', e);
   }
@@ -165,19 +185,37 @@ export const sanitizeMemberAnomalies = (members: Member[]): Member[] => {
   });
 };
 
+export const ensureMemberAllWeeks = (members: Member[], weeks: WeekDefinition[] = INITIAL_WEEKS): Member[] => {
+  return members.map((m) => {
+    let hasChanges = false;
+    const payments = { ...m.payments };
+    weeks.forEach((w) => {
+      if (!payments[w.id]) {
+        payments[w.id] = { status: 'unpaid', nominal: 0 };
+        hasChanges = true;
+      }
+    });
+    return hasChanges ? { ...m, payments } : m;
+  });
+};
+
 export const loadStoredMembers = (): Member[] => {
   try {
     const raw = localStorage.getItem(STORAGE_KEYS.MEMBERS);
     if (raw) {
       const parsed = JSON.parse(raw);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        return ensureMemberBirthDates(sanitizeMemberAnomalies(parsed));
+        // PERBAIKAN: JANGAN panggil sanitizeMemberAnomalies(parsed)!
+        // Data yang sudah diperbaiki oleh bendahara (termasuk Dwinantara & Husni)
+        // harus tetap dipertahankan sesuai data riil yang tersimpan di localStorage.
+        return ensureMemberBirthDates(ensureMemberAllWeeks(parsed));
       }
     }
   } catch (e) {
     console.error('Failed to parse stored members, using defaults', e);
   }
-  return ensureMemberBirthDates(sanitizeMemberAnomalies(INITIAL_MEMBERS));
+  // Hanya jalankan sanitizeMemberAnomalies saat pertama kali membaca data bawaan (INITIAL_MEMBERS)
+  return ensureMemberBirthDates(ensureMemberAllWeeks(sanitizeMemberAnomalies(INITIAL_MEMBERS)));
 };
 
 export const saveStoredMembers = (members: Member[]): void => {
@@ -242,7 +280,7 @@ export const loadStoredWeeks = (): WeekDefinition[] => {
     const raw = localStorage.getItem(STORAGE_KEYS.WEEKS);
     if (raw) {
       const parsed = JSON.parse(raw);
-      if (Array.isArray(parsed) && parsed.length > 0) {
+      if (Array.isArray(parsed) && parsed.length >= 30) {
         return parsed;
       }
     }
@@ -530,3 +568,242 @@ export const exportTransactionsCSV = (
   link.remove();
   URL.revokeObjectURL(url);
 };
+
+// Helper function to safely escape strings for SQL
+const sqlEscape = (str: string | undefined | null): string => {
+  if (str === undefined || str === null) return 'NULL';
+  return `'${String(str).replace(/[\0\x08\x09\x1a\n\r"'\\\%]/g, (char) => {
+    switch (char) {
+      case '\0': return '\\0';
+      case '\x08': return '\\b';
+      case '\x09': return '\\t';
+      case '\x1a': return '\\z';
+      case '\n': return '\\n';
+      case '\r': return '\\r';
+      case '"':
+      case "'":
+      case '\\':
+      case '%': return '\\' + char;
+      default: return char;
+    }
+  })}'`;
+};
+
+// Export Full Live MySQL Database Dump (.SQL) with current data
+export const exportMySQLDump = (
+  members: Member[],
+  transactions: Transaction[],
+  settings: ClubSettings,
+  weeks: WeekDefinition[],
+  inventory: InventoryItem[] = [],
+  agendas: ClubAgenda[] = []
+): void => {
+  const sql: string[] = [];
+  const timestamp = new Date().toISOString();
+
+  sql.push(`-- ========================================================`);
+  sql.push(`-- SISTEM INFORMASI KAS & KEUANGAN EKSKUL BASKET SMAN 1 CILEUNYI`);
+  sql.push(`-- MYSQL DATABASE DUMP (LIVE EXPORT)`);
+  sql.push(`-- Waktu Ekspor: ${timestamp}`);
+  sql.push(`-- Total Anggota: ${members.length} | Transaksi: ${transactions.length}`);
+  sql.push(`-- ========================================================`);
+  sql.push(``);
+  sql.push(`CREATE DATABASE IF NOT EXISTS \`sacil_basket_db\` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`);
+  sql.push(`USE \`sacil_basket_db\`;`);
+  sql.push(``);
+  sql.push(`SET FOREIGN_KEY_CHECKS = 0;`);
+  sql.push(`DROP TABLE IF EXISTS \`member_payments\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`members\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`transactions\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`inventory_items\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`club_agendas\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`week_definitions\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`club_settings\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`account_codes\`;`);
+  sql.push(`DROP TABLE IF EXISTS \`app_users\`;`);
+  sql.push(`SET FOREIGN_KEY_CHECKS = 1;`);
+  sql.push(``);
+
+  // Settings
+  sql.push(`-- 1. TABEL club_settings`);
+  sql.push(`CREATE TABLE \`club_settings\` (
+  \`id\` INT AUTO_INCREMENT PRIMARY KEY,
+  \`school_name\` VARCHAR(150) NOT NULL,
+  \`club_name\` VARCHAR(150) NOT NULL,
+  \`academic_year\` VARCHAR(30) NOT NULL,
+  \`weekly_dues_amount\` DECIMAL(12,2) NOT NULL,
+  \`headmaster_name\` VARCHAR(150) NOT NULL,
+  \`headmaster_nip\` VARCHAR(50) NULL,
+  \`supervisor_name\` VARCHAR(150) NOT NULL,
+  \`supervisor_nip\` VARCHAR(50) NULL,
+  \`coach_name\` VARCHAR(150) NOT NULL,
+  \`president_name\` VARCHAR(150) NOT NULL,
+  \`treasurer_name\` VARCHAR(150) NOT NULL,
+  \`google_sheet_url\` TEXT NULL,
+  \`active_week_id\` VARCHAR(50) NOT NULL,
+  \`treasurer_cash_on_hand\` DECIMAL(15,2) NOT NULL,
+  \`president_cash_on_hand\` DECIMAL(15,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`);
+  sql.push(`INSERT INTO \`club_settings\` VALUES (1, ${sqlEscape(settings.schoolName)}, ${sqlEscape(settings.clubName)}, ${sqlEscape(settings.academicYear)}, ${settings.weeklyDuesAmount}, ${sqlEscape(settings.headmasterName)}, ${sqlEscape(settings.headmasterNip)}, ${sqlEscape(settings.supervisorName)}, ${sqlEscape(settings.supervisorNip)}, ${sqlEscape(settings.coachName)}, ${sqlEscape(settings.presidentName)}, ${sqlEscape(settings.treasurerName)}, ${sqlEscape(settings.googleSheetUrl)}, ${sqlEscape(settings.activeWeekId || 'september_3')}, ${settings.factualCashPositions?.treasurerCashOnHand || 0}, ${settings.factualCashPositions?.presidentCashOnHand || 0});`);
+  sql.push(``);
+
+  // Week definitions
+  sql.push(`-- 2. TABEL week_definitions`);
+  sql.push(`CREATE TABLE \`week_definitions\` (
+  \`id\` VARCHAR(50) PRIMARY KEY,
+  \`month\` VARCHAR(30) NOT NULL,
+  \`week_code\` VARCHAR(10) NOT NULL,
+  \`label\` VARCHAR(50) NOT NULL,
+  \`col_order\` INT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`);
+  if (weeks.length > 0) {
+    const wVals = weeks.map((w, i) => `(${sqlEscape(w.id)}, ${sqlEscape(w.month)}, ${sqlEscape(w.week)}, ${sqlEscape(w.label)}, ${w.col || i + 1})`).join(',\n');
+    sql.push(`INSERT INTO \`week_definitions\` VALUES \n${wVals};`);
+  }
+  sql.push(``);
+
+  // Members
+  sql.push(`-- 3. TABEL members`);
+  sql.push(`CREATE TABLE \`members\` (
+  \`id\` VARCHAR(50) PRIMARY KEY,
+  \`student_id\` VARCHAR(30) NOT NULL UNIQUE,
+  \`no_urut\` INT NOT NULL,
+  \`batch\` INT NOT NULL,
+  \`name\` VARCHAR(150) NOT NULL,
+  \`grade\` VARCHAR(20) NOT NULL,
+  \`sub_class\` VARCHAR(50) NOT NULL,
+  \`jersey_number\` INT NOT NULL DEFAULT 0,
+  \`position\` VARCHAR(50) NOT NULL,
+  \`gender\` VARCHAR(20) NOT NULL,
+  \`birth_date\` DATE NULL,
+  \`phone\` VARCHAR(30) NULL,
+  \`avatar_url\` TEXT NULL,
+  \`min_weeks\` INT NOT NULL DEFAULT 0,
+  \`plus_weeks\` INT NOT NULL DEFAULT 0,
+  \`total_paid_amount\` DECIMAL(15,2) NOT NULL DEFAULT 0.00
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`);
+  if (members.length > 0) {
+    const mVals = members.map(m => `(${sqlEscape(m.id)}, ${sqlEscape(m.studentId)}, ${m.no}, ${m.batch}, ${sqlEscape(m.name)}, ${sqlEscape(m.grade)}, ${sqlEscape(m.subClass)}, ${m.jerseyNumber || 0}, ${sqlEscape(m.position)}, ${sqlEscape(m.gender)}, ${m.birthDate ? sqlEscape(m.birthDate) : 'NULL'}, ${sqlEscape(m.phone)}, ${sqlEscape(m.avatarUrl)}, ${m.minWeeks || 0}, ${m.plusWeeks || 0}, ${m.totalPaidAmount || 0})`).join(',\n');
+    sql.push(`INSERT INTO \`members\` VALUES \n${mVals};`);
+  }
+  sql.push(``);
+
+  // Member Payments
+  sql.push(`-- 4. TABEL member_payments`);
+  sql.push(`CREATE TABLE \`member_payments\` (
+  \`id\` BIGINT AUTO_INCREMENT PRIMARY KEY,
+  \`member_id\` VARCHAR(50) NOT NULL,
+  \`week_id\` VARCHAR(50) NOT NULL,
+  \`status\` ENUM('paid', 'unpaid', 'off') NOT NULL DEFAULT 'unpaid',
+  \`nominal\` DECIMAL(12,2) NOT NULL DEFAULT 5000.00,
+  \`paid_date\` DATE NULL,
+  \`note\` VARCHAR(255) NULL,
+  UNIQUE KEY \`uniq_mem_week\` (\`member_id\`, \`week_id\`),
+  CONSTRAINT \`fk_pay_mem\` FOREIGN KEY (\`member_id\`) REFERENCES \`members\`(\`id\`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`);
+
+  const pRows: string[] = [];
+  members.forEach(m => {
+    Object.entries(m.payments || {}).forEach(([wId, p]) => {
+      if (p) {
+        pRows.push(`(${sqlEscape(m.id)}, ${sqlEscape(wId)}, ${sqlEscape(p.status)}, ${p.nominal || 5000}, ${p.date ? sqlEscape(p.date) : 'NULL'}, ${sqlEscape(p.note)})`);
+      }
+    });
+  });
+  if (pRows.length > 0) {
+    // Insert in chunks of 100 for MySQL stability
+    for (let i = 0; i < pRows.length; i += 100) {
+      const chunk = pRows.slice(i, i + 100);
+      sql.push(`INSERT INTO \`member_payments\` (\`member_id\`, \`week_id\`, \`status\`, \`nominal\`, \`paid_date\`, \`note\`) VALUES \n${chunk.join(',\n')};`);
+    }
+  }
+  sql.push(``);
+
+  // Transactions
+  sql.push(`-- 5. TABEL transactions`);
+  sql.push(`CREATE TABLE \`transactions\` (
+  \`id\` VARCHAR(50) PRIMARY KEY,
+  \`trans_date\` DATE NOT NULL,
+  \`receipt_number\` VARCHAR(60) NOT NULL UNIQUE,
+  \`account_code\` VARCHAR(20) NULL,
+  \`type\` ENUM('pemasukan', 'pengeluaran') NOT NULL,
+  \`category\` VARCHAR(100) NOT NULL,
+  \`description\` TEXT NOT NULL,
+  \`amount\` DECIMAL(15,2) NOT NULL,
+  \`destination_account\` VARCHAR(60) NOT NULL,
+  \`payer_or_payee\` VARCHAR(150) NULL,
+  \`payment_method\` VARCHAR(50) NOT NULL,
+  \`proof_url\` LONGTEXT NULL,
+  \`notes\` TEXT NULL,
+  \`created_at\` BIGINT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`);
+  if (transactions.length > 0) {
+    const tVals = transactions.map(t => `(${sqlEscape(t.id)}, ${sqlEscape(t.date)}, ${sqlEscape(t.receiptNumber)}, ${sqlEscape(t.accountCode)}, ${sqlEscape(t.type)}, ${sqlEscape(t.category)}, ${sqlEscape(t.description)}, ${t.amount}, ${sqlEscape(t.destinationAccount || 'Kas Kecil (Bendahara)')}, ${sqlEscape(t.payerOrPayee)}, ${sqlEscape(t.paymentMethod)}, ${sqlEscape(t.proofUrl)}, ${sqlEscape(t.notes)}, ${t.createdAt || Date.now()})`).join(',\n');
+    sql.push(`INSERT INTO \`transactions\` VALUES \n${tVals};`);
+  }
+  sql.push(``);
+
+  // Inventory
+  sql.push(`-- 6. TABEL inventory_items`);
+  sql.push(`CREATE TABLE \`inventory_items\` (
+  \`id\` VARCHAR(50) PRIMARY KEY,
+  \`type\` VARCHAR(20) NOT NULL,
+  \`account_code\` VARCHAR(10) NOT NULL,
+  \`name\` VARCHAR(150) NOT NULL,
+  \`category\` VARCHAR(100) NOT NULL,
+  \`quantity\` INT NOT NULL,
+  \`unit\` VARCHAR(50) NOT NULL,
+  \`condition_state\` VARCHAR(50) NOT NULL,
+  \`purchase_date\` DATE NOT NULL,
+  \`unit_price\` DECIMAL(15,2) NOT NULL,
+  \`total_price\` DECIMAL(15,2) NOT NULL,
+  \`location\` VARCHAR(150) NOT NULL,
+  \`notes\` TEXT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`);
+  if (inventory.length > 0) {
+    const invVals = inventory.map(item => `(${sqlEscape(item.id)}, ${sqlEscape(item.type)}, ${sqlEscape(item.accountCode)}, ${sqlEscape(item.name)}, ${sqlEscape(item.category)}, ${item.quantity}, ${sqlEscape(item.unit)}, ${sqlEscape(item.condition)}, ${sqlEscape(item.purchaseDate)}, ${item.unitPrice}, ${item.totalPrice}, ${sqlEscape(item.location || 'Gudang Olahraga')}, ${sqlEscape(item.notes)})`).join(',\n');
+    sql.push(`INSERT INTO \`inventory_items\` VALUES \n${invVals};`);
+  }
+  sql.push(``);
+
+  // Agendas
+  sql.push(`-- 7. TABEL club_agendas`);
+  sql.push(`CREATE TABLE \`club_agendas\` (
+  \`id\` VARCHAR(50) PRIMARY KEY,
+  \`title\` VARCHAR(200) NOT NULL,
+  \`category\` VARCHAR(100) NOT NULL,
+  \`event_date\` DATE NOT NULL,
+  \`event_time\` VARCHAR(100) NOT NULL,
+  \`location\` VARCHAR(150) NOT NULL,
+  \`description\` TEXT NULL,
+  \`is_active\` BOOLEAN NOT NULL DEFAULT TRUE,
+  \`target_audience\` VARCHAR(100) NOT NULL,
+  \`pic\` VARCHAR(150) NOT NULL,
+  \`created_at\` BIGINT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;`);
+  if (agendas.length > 0) {
+    const agVals = agendas.map(a => `(${sqlEscape(a.id)}, ${sqlEscape(a.title)}, ${sqlEscape(a.category)}, ${sqlEscape(a.date)}, ${sqlEscape(a.time)}, ${sqlEscape(a.location)}, ${sqlEscape(a.description)}, ${a.isActive ? 1 : 0}, ${sqlEscape(a.targetAudience)}, ${sqlEscape(a.pic)}, ${a.createdAt || Date.now()})`).join(',\n');
+    sql.push(`INSERT INTO \`club_agendas\` VALUES \n${agVals};`);
+  }
+  sql.push(``);
+
+  // Useful Views
+  sql.push(`-- 8. VIEWS AKUNTANSI`);
+  sql.push(`CREATE OR REPLACE VIEW \`v_ringkasan_keuangan\` AS
+SELECT 
+  COALESCE(SUM(CASE WHEN \`type\` = 'pemasukan' THEN \`amount\` ELSE 0 END), 0) AS \`total_pemasukan\`,
+  COALESCE(SUM(CASE WHEN \`type\` = 'pengeluaran' THEN \`amount\` ELSE 0 END), 0) AS \`total_pengeluaran\`,
+  COALESCE(SUM(CASE WHEN \`type\` = 'pemasukan' THEN \`amount\` ELSE -\`amount\` END), 0) AS \`saldo_organisasi\`
+FROM \`transactions\`;`);
+
+  const blob = new Blob([sql.join('\n')], { type: 'application/sql;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.setAttribute('href', url);
+  link.setAttribute('download', `sacil_basket_mysql_dump_${new Date().toISOString().slice(0, 10)}.sql`);
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+};
+

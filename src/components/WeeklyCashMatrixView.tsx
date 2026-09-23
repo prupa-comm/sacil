@@ -148,10 +148,8 @@ export const WeeklyCashMatrixView: React.FC<WeeklyCashMatrixViewProps> = ({
     const currentStatus = currentPay?.status || 'unpaid';
 
     if (userRole === 'publik') {
-      // In read-only mode, clicking a cell doesn't alter data, but shows receipt if paid
-      if (currentStatus === 'paid') {
-        onShowReceipt(member, settings.weeklyDuesAmount, 1);
-      }
+      // Dalam mode publik, klik sel hanya bersifat read-only tanpa membuka kuitansi
+      // untuk mencegah manipulasi kuitansi oleh peserta atau publik.
       return;
     }
 
@@ -328,7 +326,7 @@ export const WeeklyCashMatrixView: React.FC<WeeklyCashMatrixViewProps> = ({
                 {visibleWeeks.map((w) => {
                   const activeWeekId = settings.activeWeekId || 'september_3';
                   const activeWeekIndex = weeks.findIndex((item) => item.id === activeWeekId);
-                  const validActiveIndex = activeWeekIndex !== -1 ? activeWeekIndex : 11;
+                  const validActiveIndex = activeWeekIndex !== -1 ? activeWeekIndex : Math.max(0, weeks.findIndex((item) => item.id === 'september_3'));
                   const wIndex = weeks.findIndex((item) => item.id === w.id);
                   const isActiveWeek = w.id === activeWeekId;
                   const isFutureWeek = wIndex > validActiveIndex;
@@ -455,7 +453,7 @@ export const WeeklyCashMatrixView: React.FC<WeeklyCashMatrixViewProps> = ({
                       const status = pay?.status || 'unpaid';
                       const activeWeekId = settings.activeWeekId || 'september_3';
                       const activeWeekIndex = weeks.findIndex((item) => item.id === activeWeekId);
-                      const validActiveIndex = activeWeekIndex !== -1 ? activeWeekIndex : 11;
+                      const validActiveIndex = activeWeekIndex !== -1 ? activeWeekIndex : Math.max(0, weeks.findIndex((item) => item.id === 'september_3'));
                       const wIndex = weeks.findIndex((item) => item.id === week.id);
                       const isFuture = wIndex > validActiveIndex;
 
@@ -524,13 +522,17 @@ export const WeeklyCashMatrixView: React.FC<WeeklyCashMatrixViewProps> = ({
                           </button>
                         </div>
                       ) : (
-                        <button
-                          onClick={() => onShowReceipt(member, settings.weeklyDuesAmount, 1)}
-                          className="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 text-slate-700 dark:text-slate-200 text-[11px] font-semibold transition flex items-center gap-1 mx-auto"
-                        >
-                          <Receipt className="w-3.5 h-3.5" />
-                          <span>Kuitansi</span>
-                        </button>
+                        <div className="flex items-center justify-center py-1">
+                          {member.minWeeks > 0 ? (
+                            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200/60 dark:border-amber-900/60">
+                              Kurang {member.minWeeks} Mgg
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-900/60">
+                              Lunas
+                            </span>
+                          )}
+                        </div>
                       )}
                     </td>
                   </tr>

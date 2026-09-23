@@ -228,181 +228,47 @@ export const COA_CODES: AccountCode[] = [
 ];
 
 export const INITIAL_WEEKS: WeekDefinition[] = [
-  {
-    "id": "juli_1",
-    "col": 6,
-    "month": "Juli",
-    "week": "M1",
-    "label": "Juli M1"
-  },
-  {
-    "id": "juli_2",
-    "col": 7,
-    "month": "Juli",
-    "week": "M2",
-    "label": "Juli M2"
-  },
-  {
-    "id": "juli_3",
-    "col": 8,
-    "month": "Juli",
-    "week": "M3",
-    "label": "Juli M3"
-  },
-  {
-    "id": "juli_4",
-    "col": 9,
-    "month": "Juli",
-    "week": "M4",
-    "label": "Juli M4"
-  },
-  {
-    "id": "agustus_1",
-    "col": 10,
-    "month": "Agustus",
-    "week": "M1",
-    "label": "Agustus M1"
-  },
-  {
-    "id": "agustus_2",
-    "col": 11,
-    "month": "Agustus",
-    "week": "M2",
-    "label": "Agustus M2"
-  },
-  {
-    "id": "agustus_3",
-    "col": 12,
-    "month": "Agustus",
-    "week": "M3",
-    "label": "Agustus M3"
-  },
-  {
-    "id": "agustus_4",
-    "col": 13,
-    "month": "Agustus",
-    "week": "M4",
-    "label": "Agustus M4"
-  },
-  {
-    "id": "agustus_5",
-    "col": 14,
-    "month": "Agustus",
-    "week": "M5",
-    "label": "Agustus M5"
-  },
-  {
-    "id": "september_1",
-    "col": 15,
-    "month": "September",
-    "week": "M1",
-    "label": "September M1"
-  },
-  {
-    "id": "september_2",
-    "col": 16,
-    "month": "September",
-    "week": "M2",
-    "label": "September M2"
-  },
-  {
-    "id": "september_3",
-    "col": 17,
-    "month": "September",
-    "week": "M3",
-    "label": "September M3"
-  },
-  {
-    "id": "september_4",
-    "col": 18,
-    "month": "September",
-    "week": "M4",
-    "label": "September M4"
-  },
-  {
-    "id": "oktober_1",
-    "col": 19,
-    "month": "Oktober",
-    "week": "M1",
-    "label": "Oktober M1"
-  },
-  {
-    "id": "oktober_2",
-    "col": 20,
-    "month": "Oktober",
-    "week": "M2",
-    "label": "Oktober M2"
-  },
-  {
-    "id": "oktober_3",
-    "col": 21,
-    "month": "Oktober",
-    "week": "M3",
-    "label": "Oktober M3"
-  },
-  {
-    "id": "oktober_4",
-    "col": 22,
-    "month": "Oktober",
-    "week": "M4",
-    "label": "Oktober M4"
-  },
-  {
-    "id": "november_1",
-    "col": 23,
-    "month": "November",
-    "week": "M1",
-    "label": "November M1"
-  },
-  {
-    "id": "november_2",
-    "col": 24,
-    "month": "November",
-    "week": "M2",
-    "label": "November M2"
-  },
-  {
-    "id": "november_3",
-    "col": 25,
-    "month": "November",
-    "week": "M3",
-    "label": "November M3"
-  },
-  {
-    "id": "november_4",
-    "col": 26,
-    "month": "November",
-    "week": "M4",
-    "label": "November M4"
-  },
-  {
-    "id": "desember_1",
-    "col": 27,
-    "month": "Desember",
-    "week": "M1",
-    "label": "Desember M1"
-  },
-  {
-    "id": "desember_2",
-    "col": 28,
-    "month": "Desember",
-    "week": "M2",
-    "label": "Desember M2"
-  },
-  {
-    "id": "desember_3",
-    "col": 29,
-    "month": "Desember",
-    "week": "M3",
-    "label": "Desember M3"
-  },
-  {
-    "id": "desember_4",
-    "col": 30,
-    "month": "Desember",
-    "week": "M4",
-    "label": "Desember M4"
-  }
+  // Juli (M1 - M5)
+  { "id": "juli_1", "col": 6, "month": "Juli", "week": "M1", "label": "Juli M1" },
+  { "id": "juli_2", "col": 7, "month": "Juli", "week": "M2", "label": "Juli M2" },
+  { "id": "juli_3", "col": 8, "month": "Juli", "week": "M3", "label": "Juli M3" },
+  { "id": "juli_4", "col": 9, "month": "Juli", "week": "M4", "label": "Juli M4" },
+  { "id": "juli_5", "col": 10, "month": "Juli", "week": "M5", "label": "Juli M5" },
+
+  // Agustus (M1 - M5)
+  { "id": "agustus_1", "col": 11, "month": "Agustus", "week": "M1", "label": "Agustus M1" },
+  { "id": "agustus_2", "col": 12, "month": "Agustus", "week": "M2", "label": "Agustus M2" },
+  { "id": "agustus_3", "col": 13, "month": "Agustus", "week": "M3", "label": "Agustus M3" },
+  { "id": "agustus_4", "col": 14, "month": "Agustus", "week": "M4", "label": "Agustus M4" },
+  { "id": "agustus_5", "col": 15, "month": "Agustus", "week": "M5", "label": "Agustus M5" },
+
+  // September (M1 - M5)
+  { "id": "september_1", "col": 16, "month": "September", "week": "M1", "label": "September M1" },
+  { "id": "september_2", "col": 17, "month": "September", "week": "M2", "label": "September M2" },
+  { "id": "september_3", "col": 18, "month": "September", "week": "M3", "label": "September M3" },
+  { "id": "september_4", "col": 19, "month": "September", "week": "M4", "label": "September M4" },
+  { "id": "september_5", "col": 20, "month": "September", "week": "M5", "label": "September M5" },
+
+  // Oktober (M1 - M5)
+  { "id": "oktober_1", "col": 21, "month": "Oktober", "week": "M1", "label": "Oktober M1" },
+  { "id": "oktober_2", "col": 22, "month": "Oktober", "week": "M2", "label": "Oktober M2" },
+  { "id": "oktober_3", "col": 23, "month": "Oktober", "week": "M3", "label": "Oktober M3" },
+  { "id": "oktober_4", "col": 24, "month": "Oktober", "week": "M4", "label": "Oktober M4" },
+  { "id": "oktober_5", "col": 25, "month": "Oktober", "week": "M5", "label": "Oktober M5" },
+
+  // November (M1 - M5)
+  { "id": "november_1", "col": 26, "month": "November", "week": "M1", "label": "November M1" },
+  { "id": "november_2", "col": 27, "month": "November", "week": "M2", "label": "November M2" },
+  { "id": "november_3", "col": 28, "month": "November", "week": "M3", "label": "November M3" },
+  { "id": "november_4", "col": 29, "month": "November", "week": "M4", "label": "November M4" },
+  { "id": "november_5", "col": 30, "month": "November", "week": "M5", "label": "November M5" },
+
+  // Desember (M1 - M5)
+  { "id": "desember_1", "col": 31, "month": "Desember", "week": "M1", "label": "Desember M1" },
+  { "id": "desember_2", "col": 32, "month": "Desember", "week": "M2", "label": "Desember M2" },
+  { "id": "desember_3", "col": 33, "month": "Desember", "week": "M3", "label": "Desember M3" },
+  { "id": "desember_4", "col": 34, "month": "Desember", "week": "M4", "label": "Desember M4" },
+  { "id": "desember_5", "col": 35, "month": "Desember", "week": "M5", "label": "Desember M5" }
 ];
 
 export const INITIAL_MEMBERS: Member[] = [

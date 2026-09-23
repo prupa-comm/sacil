@@ -99,6 +99,7 @@ export interface ClubSettings {
   googleSheetUrl: string;
   activeWeekId?: string; // ID minggu aktif berjalan (e.g. 'september_3')
   lastUpdatedTimestamp: string;
+  treasurerPin?: string;
   factualCashPositions?: {
     treasurerCashOnHand: number;
     presidentCashOnHand: number;

@@ -180,7 +180,7 @@ export default function App() {
   const recalculateMemberWeeks = (member: Member, updatedPayments: Record<string, any>): Member => {
     const activeWeekId = settings.activeWeekId || 'september_3';
     const activeIndex = weeks.findIndex((w) => w.id === activeWeekId);
-    const validActiveIndex = activeIndex !== -1 ? activeIndex : 11; // index 11 is september_3
+    const validActiveIndex = activeIndex !== -1 ? activeIndex : Math.max(0, weeks.findIndex((w) => w.id === 'september_3'));
     const activeWeek = weeks[validActiveIndex];
     const activeMonth = activeWeek?.month || 'September';
 
@@ -320,8 +320,11 @@ export default function App() {
     }
   };
 
-  // Show digital receipt
+  // Show digital receipt (restricted to Bendahara only)
   const handleShowReceipt = (member: Member, amount: number, weeksCount: number) => {
+    if (userRole !== 'bendahara') {
+      return;
+    }
     const today = new Date();
     const receiptNum = `KAS-SACIL/${today.getFullYear()}/${String(today.getMonth() + 1).padStart(2, '0')}/${Math.floor(1000 + Math.random() * 9000)}`;
     setReceiptState({
@@ -661,7 +664,10 @@ export default function App() {
             transactions={transactions}
             settings={settings}
             weeks={weeks}
+            inventory={inventory}
+            agendas={agendas}
             userRole={userRole}
+            onUpdateSettings={setSettings}
             onRestoreBackup={handleRestoreBackup}
             onResetData={handleResetData}
           />
@@ -816,7 +822,7 @@ export default function App() {
         />
       )}
 
-      {receiptState && (
+      {receiptState && userRole === 'bendahara' && (
         <ReceiptModal
           member={receiptState.member}
           amount={receiptState.amount}
@@ -824,6 +830,7 @@ export default function App() {
           paymentDate={receiptState.date}
           receiptNumber={receiptState.receiptNumber}
           settings={settings}
+          userRole={userRole}
           onClose={() => setReceiptState(null)}
         />
       )}
@@ -833,6 +840,8 @@ export default function App() {
         isOpen={isPinModalOpen}
         onClose={() => setIsPinModalOpen(false)}
         onSuccess={() => setUserRole('bendahara')}
+        settings={settings}
+        onUpdateSettings={setSettings}
       />
 
       {/* Separated Floating Utility Dock (Role Switch, Font Size, Theme, Wifi Indicator) */}

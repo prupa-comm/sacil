@@ -10,26 +10,40 @@ import {
   ShieldCheck,
   AlertCircle,
   FileSpreadsheet,
-  CheckCircle2
+  CheckCircle2,
+  Server,
+  BookOpen,
+  Code,
+  KeyRound,
+  Eye,
+  EyeOff,
+  Lock
 } from 'lucide-react';
-import { Member, Transaction, ClubSettings, WeekDefinition, UserRole } from '../types';
+import { Member, Transaction, ClubSettings, WeekDefinition, UserRole, InventoryItem, ClubAgenda } from '../types';
 import {
   formatRupiah,
   formatDateIndo,
   exportBackupJSON,
   exportGoogleSheetCSV,
   exportTransactionsCSV,
-  calculateCashPositions
+  exportMySQLDump,
+  calculateCashPositions,
+  loadTreasurerPin,
+  saveTreasurerPin
 } from '../utils/storage';
 import { printHtmlElement } from '../utils/printHelper';
 import { PrintExportModal } from './PrintExportModal';
+import { MySQLGuideModal } from './MySQLGuideModal';
 
 interface ReportsAndSyncViewProps {
   members: Member[];
   transactions: Transaction[];
   settings: ClubSettings;
   weeks: WeekDefinition[];
+  inventory?: InventoryItem[];
+  agendas?: ClubAgenda[];
   userRole?: UserRole;
+  onUpdateSettings?: (settings: ClubSettings) => void;
   onRestoreBackup: (data: { members: Member[]; transactions: Transaction[]; settings?: ClubSettings }) => void;
   onResetData: () => void;
 }
@@ -39,7 +53,10 @@ export const ReportsAndSyncView: React.FC<ReportsAndSyncViewProps> = ({
   transactions,
   settings,
   weeks,
+  inventory = [],
+  agendas = [],
   userRole = 'publik',
+  onUpdateSettings,
   onRestoreBackup,
   onResetData
 }) => {
@@ -47,6 +64,41 @@ export const ReportsAndSyncView: React.FC<ReportsAndSyncViewProps> = ({
   const [activeSubTab, setActiveSubTab] = useState<'lpj' | 'sync'>('lpj');
   const [restoreSuccess, setRestoreSuccess] = useState<boolean>(false);
   const [showPrintModal, setShowPrintModal] = useState<boolean>(false);
+  const [showMySQLModal, setShowMySQLModal] = useState<boolean>(false);
+
+  // States for In-App PIN Management
+  const [currentPinInput, setCurrentPinInput] = useState<string>('');
+  const [newPinInput, setNewPinInput] = useState<string>('');
+  const [confirmPinInput, setConfirmPinInput] = useState<string>('');
+  const [pinFeedback, setPinFeedback] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+  const [showPlainPin, setShowPlainPin] = useState<boolean>(false);
+
+  const handleUpdateTreasurerPin = (e: React.FormEvent) => {
+    e.preventDefault();
+    setPinFeedback(null);
+    const activeStoredPin = loadTreasurerPin(settings);
+    if (currentPinInput.trim() !== activeStoredPin) {
+      setPinFeedback({ type: 'error', message: 'PIN Lama salah. Masukkan PIN yang sedang aktif.' });
+      return;
+    }
+    if (newPinInput.trim().length < 4) {
+      setPinFeedback({ type: 'error', message: 'PIN Baru minimal terdiri dari 4 digit angka.' });
+      return;
+    }
+    if (newPinInput.trim() !== confirmPinInput.trim()) {
+      setPinFeedback({ type: 'error', message: 'Konfirmasi PIN baru tidak sesuai.' });
+      return;
+    }
+    const cleanPin = newPinInput.trim();
+    saveTreasurerPin(cleanPin);
+    if (onUpdateSettings) {
+      onUpdateSettings({ ...settings, treasurerPin: cleanPin });
+    }
+    setPinFeedback({ type: 'success', message: 'PIN Pengurus Bendahara berhasil diperbarui & disimpan di database/pengaturan!' });
+    setCurrentPinInput('');
+    setNewPinInput('');
+    setConfirmPinInput('');
+  };
 
   // In public mode, enforce LPJ sub-tab only
   const currentSubTab = userRole === 'bendahara' ? activeSubTab : 'lpj';
@@ -476,10 +528,193 @@ export const ReportsAndSyncView: React.FC<ReportsAndSyncViewProps> = ({
                     onResetData();
                   }
                 }}
-                className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+                className="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer"
               >
                 Reset Data Awal
               </button>
+            </div>
+          </div>
+
+          {/* Treasurer Security & PIN Management Card */}
+          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-xl bg-orange-100 text-orange-700 dark:bg-orange-950/60 dark:text-orange-400">
+                  <KeyRound className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                    <span>Keamanan Akses & PIN Bendahara</span>
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300">
+                      Terproteksi
+                    </span>
+                  </h4>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    PIN rahasia untuk membatasi hak akses pencatatan kas, edit roster, dan pembuatan kuitansi resmi
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form onSubmit={handleUpdateTreasurerPin} className="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/40 space-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div>
+                  <label className="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">
+                    PIN Lama Saat Ini *
+                  </label>
+                  <input
+                    type={showPlainPin ? 'text' : 'password'}
+                    required
+                    maxLength={12}
+                    value={currentPinInput}
+                    onChange={(e) => setCurrentPinInput(e.target.value)}
+                    placeholder="PIN saat ini"
+                    className="w-full px-3 py-2 text-xs font-mono font-bold rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-orange-500 focus:outline-hidden"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">
+                    PIN Baru (min. 4 digit) *
+                  </label>
+                  <input
+                    type={showPlainPin ? 'text' : 'password'}
+                    required
+                    maxLength={12}
+                    value={newPinInput}
+                    onChange={(e) => setNewPinInput(e.target.value)}
+                    placeholder="PIN baru rahasia"
+                    className="w-full px-3 py-2 text-xs font-mono font-bold rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-orange-500 focus:outline-hidden"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-[11px] font-bold text-slate-700 dark:text-slate-300 mb-1">
+                    Konfirmasi PIN Baru *
+                  </label>
+                  <input
+                    type={showPlainPin ? 'text' : 'password'}
+                    required
+                    maxLength={12}
+                    value={confirmPinInput}
+                    onChange={(e) => setConfirmPinInput(e.target.value)}
+                    placeholder="Ulangi PIN baru"
+                    className="w-full px-3 py-2 text-xs font-mono font-bold rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-orange-500 focus:outline-hidden"
+                  />
+                </div>
+              </div>
+
+              {pinFeedback && (
+                <div className={`p-2.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 ${
+                  pinFeedback.type === 'success'
+                    ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
+                    : 'bg-rose-50 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800'
+                }`}>
+                  {pinFeedback.type === 'success' ? <CheckCircle2 className="w-4 h-4 text-emerald-600" /> : <AlertCircle className="w-4 h-4 text-rose-600" />}
+                  <span>{pinFeedback.message}</span>
+                </div>
+              )}
+
+              <div className="flex items-center justify-between pt-1">
+                <button
+                  type="button"
+                  onClick={() => setShowPlainPin(!showPlainPin)}
+                  className="inline-flex items-center gap-1 text-[11px] text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 cursor-pointer"
+                >
+                  {showPlainPin ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                  <span>{showPlainPin ? 'Sembunyikan Digit PIN' : 'Tampilkan Digit PIN'}</span>
+                </button>
+
+                <button
+                  type="submit"
+                  className="px-4 py-2 rounded-xl bg-orange-600 hover:bg-orange-700 active:scale-95 text-xs font-bold text-white shadow-xs transition cursor-pointer"
+                >
+                  Simpan Perubahan PIN
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* MySQL Relational Database & REST API Card */}
+          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-xl bg-blue-100 text-blue-700 dark:bg-blue-950/60 dark:text-blue-400">
+                  <Server className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                    <span>Database MySQL & Backend REST API</span>
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-blue-100 dark:bg-blue-950 text-blue-800 dark:text-blue-300">
+                      RDBMS
+                    </span>
+                  </h4>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Skema relasional 3NF, view akuntansi, foreign keys, dan integrasi server XAMPP / Laragon / Cloud
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setShowMySQLModal(true)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 dark:bg-blue-950/80 hover:bg-blue-100 dark:hover:bg-blue-900 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 font-bold text-xs transition cursor-pointer"
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Buka Panduan & Skema</span>
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {/* Unduh Skema DDL */}
+              <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/40 space-y-2">
+                <h5 className="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <Database className="w-4 h-4 text-blue-600" />
+                  <span>Skema MySQL (.sql)</span>
+                </h5>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  Struktur 10 tabel, foreign key, views arus kas, dan konfigurasi default SMAN 1 Cileunyi.
+                </p>
+                <a
+                  href="/database/sacil_basket_mysql.sql"
+                  download="sacil_basket_mysql.sql"
+                  className="block text-center w-full py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-xs font-bold text-white shadow-xs transition"
+                >
+                  Unduh Skema (.sql)
+                </a>
+              </div>
+
+              {/* Ekspor Live Data ke MySQL Dump */}
+              <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/40 space-y-2">
+                <h5 className="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <Download className="w-4 h-4 text-emerald-600" />
+                  <span>Ekspor Data Live (.sql)</span>
+                </h5>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  Dump query INSERT seluruh 48 atlet, mutasi kas, kuitansi, inventaris, dan agenda terkini.
+                </p>
+                <button
+                  onClick={() => exportMySQLDump(members, transactions, settings, weeks, inventory, agendas)}
+                  className="w-full py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-xs font-bold text-white shadow-xs transition"
+                >
+                  Unduh Dump Live (.sql)
+                </button>
+              </div>
+
+              {/* REST API & Node.js Guide */}
+              <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/40 space-y-2">
+                <h5 className="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
+                  <Code className="w-4 h-4 text-orange-600" />
+                  <span>REST API & Query</span>
+                </h5>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                  Panduan kode Express.js, pool mysql2, dan contoh query laporan akuntansi otomatis.
+                </p>
+                <button
+                  onClick={() => setShowMySQLModal(true)}
+                  className="w-full py-2 rounded-lg bg-slate-800 hover:bg-slate-900 text-white dark:bg-slate-700 dark:hover:bg-slate-600 text-xs font-bold shadow-xs transition"
+                >
+                  Lihat Dokumentasi API
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -491,6 +726,16 @@ export const ReportsAndSyncView: React.FC<ReportsAndSyncViewProps> = ({
         documentTitle={`LPJ Kas Basket SACIL - ${settings.schoolName}`}
         defaultFilename={`LPJ-Kas-Basket-SACIL-${settings.academicYear.replace('/', '-')}.pdf`}
         documentSubtitle="Laporan Pertanggungjawaban Resmi Keuangan & Kas Ekstrakurikuler Bola Basket"
+      />
+      <MySQLGuideModal
+        isOpen={showMySQLModal}
+        onClose={() => setShowMySQLModal(false)}
+        members={members}
+        transactions={transactions}
+        settings={settings}
+        weeks={weeks}
+        inventory={inventory}
+        agendas={agendas}
       />
     </div>
   );

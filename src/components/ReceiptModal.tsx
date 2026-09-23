@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { X, Printer, CheckCircle, Share2, Plus, Minus } from 'lucide-react';
-import { Member, ClubSettings } from '../types';
+import { X, Printer, CheckCircle, Share2, Plus, Minus, ShieldCheck, ShieldAlert } from 'lucide-react';
+import { Member, ClubSettings, UserRole } from '../types';
 import { formatRupiah, formatDateIndo } from '../utils/storage';
 import { printHtmlElement } from '../utils/printHelper';
 import { PrintExportModal } from './PrintExportModal';
@@ -13,6 +13,7 @@ interface ReceiptModalProps {
   receiptNumber: string;
   notes?: string;
   settings: ClubSettings;
+  userRole?: UserRole;
   onClose: () => void;
 }
 
@@ -24,31 +25,38 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
   receiptNumber,
   notes,
   settings,
+  userRole = 'bendahara',
   onClose
 }) => {
   const [weeksCount, setWeeksCount] = useState<number>(initialWeeksCount || 1);
   const [showPrintModal, setShowPrintModal] = useState<boolean>(false);
   const totalAmount = weeksCount * settings.weeklyDuesAmount;
 
+  const isTreasurer = userRole === 'bendahara';
+
   const handlePrint = () => {
+    if (!isTreasurer) return;
     setShowPrintModal(true);
   };
 
   const handleShareWA = () => {
+    if (!isTreasurer) return;
     const text = `*KUITANSI RESMI SETORAN KAS BASKET SACIL*
 SMAN 1 CILEUNYI
 -----------------------------------
-No. Kuitansi: ${receiptNumber}
-Tanggal: ${formatDateIndo(paymentDate)}
-Nama Siswa: ${member.name}
-Kelas: ${member.grade} (${member.subClass})
-Nomor Jersey: #${member.jerseyNumber}
-Jumlah Dibayar: ${formatRupiah(totalAmount)} (${weeksCount} Minggu @${formatRupiah(settings.weeklyDuesAmount)})
-Status Tunggakan: ${member.minWeeks > 0 ? `${member.minWeeks} Minggu (${formatRupiah(member.minWeeks * settings.weeklyDuesAmount)})` : 'LUNAS / Bebas Tunggakan'}
-Catatan: ${notes || 'Setoran kas mingguan ekskul basket'}
+No. Kuitansi : ${receiptNumber}
+Tanggal      : ${formatDateIndo(paymentDate)}
+Nama Siswa   : ${member.name}
+Kelas        : ${member.grade} (${member.subClass})
+Nomor Jersey : #${member.jerseyNumber}
+Jumlah Bayar : ${formatRupiah(totalAmount)} (${weeksCount} Minggu @${formatRupiah(settings.weeklyDuesAmount)})
+Sisa Tunggak : ${member.minWeeks > 0 ? `${member.minWeeks} Minggu (${formatRupiah(member.minWeeks * settings.weeklyDuesAmount)})` : 'LUNAS / Bebas Tunggakan'}
+Catatan      : ${notes || 'Setoran kas mingguan ekskul basket'}
 -----------------------------------
-Terima kasih atas kontribusinya untuk kemajuan Ekskul Basket SACIL!
-_Bendahara Basket SACIL - SMAN 1 Cileunyi_`;
+*VERIFIKASI SISTEM:*
+✓ Tercatat sah di Buku Kas Umum (BKM)
+✓ Diterbitkan resmi oleh Bendahara: ${settings.treasurerName}
+✓ Dokumen ini sah dan diterbitkan langsung dari Sistem Kas SACIL.`;
 
     const encoded = encodeURIComponent(text);
     window.open(`https://wa.me/?text=${encoded}`, '_blank');
@@ -188,24 +196,31 @@ _Bendahara Basket SACIL - SMAN 1 Cileunyi_`;
         </div>
 
         {/* Action Buttons (Print / Share / Close) */}
-        <div className="p-4 bg-slate-50 flex items-center gap-2.5 print:hidden">
-          <button
-            id="btn-print-receipt"
-            onClick={handlePrint}
-            className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 py-2.5 text-xs font-semibold shadow-sm transition active:scale-95"
-          >
-            <Printer className="w-4 h-4" />
-            <span>Cetak Kuitansi</span>
-          </button>
-          <button
-            id="btn-share-receipt-wa"
-            onClick={handleShareWA}
-            className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 py-2.5 text-xs font-semibold shadow-sm transition active:scale-95"
-          >
-            <Share2 className="w-4 h-4" />
-            <span>Kirim WhatsApp</span>
-          </button>
-        </div>
+        {isTreasurer ? (
+          <div className="p-4 bg-slate-50 flex items-center gap-2.5 print:hidden">
+            <button
+              id="btn-print-receipt"
+              onClick={handlePrint}
+              className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 py-2.5 text-xs font-semibold shadow-sm transition active:scale-95 cursor-pointer"
+            >
+              <Printer className="w-4 h-4" />
+              <span>Cetak Kuitansi</span>
+            </button>
+            <button
+              id="btn-share-receipt-wa"
+              onClick={handleShareWA}
+              className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 py-2.5 text-xs font-semibold shadow-sm transition active:scale-95 cursor-pointer"
+            >
+              <Share2 className="w-4 h-4" />
+              <span>Kirim WhatsApp</span>
+            </button>
+          </div>
+        ) : (
+          <div className="p-4 bg-amber-50 border-t border-amber-200 text-amber-800 text-xs flex items-center gap-2 print:hidden">
+            <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0" />
+            <span>Mode Publik: Penerbitan dan pengiriman kuitansi hanya dapat dilakukan oleh Bendahara resmi.</span>
+          </div>
+        )}
       </div>
       <PrintExportModal
         isOpen={showPrintModal}

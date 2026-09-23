@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
-import { Lock, Unlock, X, KeyRound, ShieldAlert, Check, Eye, EyeOff, Settings } from 'lucide-react';
-import { loadTreasurerPin, saveTreasurerPin, DEFAULT_TREASURER_PIN } from '../utils/storage';
+import { Lock, Unlock, X, KeyRound, ShieldAlert, Check, Eye, EyeOff, ShieldCheck } from 'lucide-react';
+import { ClubSettings } from '../types';
+import { loadTreasurerPin, saveTreasurerPin } from '../utils/storage';
 
 interface TreasurerPinModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSuccess: () => void;
+  settings?: ClubSettings;
+  onUpdateSettings?: (settings: ClubSettings) => void;
 }
 
 export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
   isOpen,
   onClose,
-  onSuccess
+  onSuccess,
+  settings,
+  onUpdateSettings
 }) => {
   const [pinInput, setPinInput] = useState<string>('');
   const [showPin, setShowPin] = useState<boolean>(false);
@@ -26,7 +31,7 @@ export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
 
   if (!isOpen) return null;
 
-  const currentStoredPin = loadTreasurerPin();
+  const currentStoredPin = loadTreasurerPin(settings);
 
   const handleVerify = (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,7 +40,7 @@ export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
       onSuccess();
       onClose();
     } else {
-      setErrorMsg('PIN yang Anda masukkan salah. Silakan coba kembali.');
+      setErrorMsg('PIN yang Anda masukkan tidak sesuai. Akses ditolak.');
     }
   };
 
@@ -57,15 +62,22 @@ export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
       return;
     }
 
-    saveTreasurerPin(newPin.trim());
-    setChangeSuccessMsg('PIN Pengurus Bendahara berhasil diperbarui!');
+    const cleanNewPin = newPin.trim();
+    saveTreasurerPin(cleanNewPin);
+    if (settings && onUpdateSettings) {
+      onUpdateSettings({ ...settings, treasurerPin: cleanNewPin });
+    }
+
+    setChangeSuccessMsg('PIN Bendahara berhasil diperbarui! Membuka akses...');
     setCurrentPinVerify('');
     setNewPin('');
     setConfirmNewPin('');
     setTimeout(() => {
       setIsChangingPin(false);
       setChangeSuccessMsg('');
-    }, 1500);
+      onSuccess();
+      onClose();
+    }, 1200);
   };
 
   return (
@@ -105,7 +117,7 @@ export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
         {!isChangingPin ? (
           <form onSubmit={handleVerify} className="p-5 space-y-4">
             <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-              Masukkan PIN Pengurus untuk mengaktifkan izin modifikasi data, catat kas, dan hapus/edit anggota.
+              Masukkan PIN Pengurus untuk mengaktifkan izin modifikasi data, catat kas, dan kelola anggota.
             </p>
 
             <div>
@@ -144,12 +156,10 @@ export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
               )}
             </div>
 
-            {/* Hint default PIN */}
-            <div className="p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200/60 dark:border-amber-900/40 text-[11px] text-amber-800 dark:text-amber-300">
-              <span className="font-bold">PIN Bawaan Awal:</span>{' '}
-              <code className="font-mono font-black bg-amber-200/60 dark:bg-amber-900/60 px-1.5 py-0.5 rounded text-amber-950 dark:text-amber-100">
-                {DEFAULT_TREASURER_PIN}
-              </code>
+            {/* Security Notice (No PIN exposure) */}
+            <div className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-[11px] text-slate-600 dark:text-slate-400 flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 text-orange-600 shrink-0" />
+              <span>Akses dibatasi hanya untuk Bendahara & Pengurus SACIL resmi.</span>
             </div>
 
             {/* Action buttons */}
@@ -157,7 +167,7 @@ export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
               <button
                 type="submit"
                 id="btn-submit-verify-pin"
-                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-700 active:scale-95 text-xs font-bold text-white shadow-md transition"
+                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-700 active:scale-95 text-xs font-bold text-white shadow-md transition cursor-pointer"
               >
                 <Unlock className="w-4 h-4" />
                 <span>Buka Akses Bendahara</span>
@@ -170,7 +180,7 @@ export const TreasurerPinModal: React.FC<TreasurerPinModalProps> = ({
                   setErrorMsg('');
                   setIsChangingPin(true);
                 }}
-                className="w-full py-2 text-[11px] font-semibold text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 text-center transition"
+                className="w-full py-2 text-[11px] font-semibold text-slate-500 dark:text-slate-400 hover:text-orange-600 dark:hover:text-orange-400 text-center transition cursor-pointer"
               >
                 Ingin mengubah PIN pengurus? Klik di sini
               </button>
